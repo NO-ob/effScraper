@@ -1,0 +1,158 @@
+.eng {
+}
+
+.jap {
+}
+
+body {
+	padding: 0;
+	margin:0;
+	font-family: Sans-serif;
+	background-color: #2F9B8D;
+}
+li {
+	color:#2F9B8D
+}
+.navBar{
+	width: 180px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+  	left: 0;
+  	height: 100%;
+  	overflow-x: hidden;
+	padding: 1em;
+	background-color: white;
+}
+video{
+	max-width:100%;
+}
+.navLinks {
+	padding:0;
+}
+li {
+	list-style-type: none;
+}
+.navLinks > li{
+	padding-bottom: 1em;
+
+}
+.navLinks > li > a {
+	text-decoration: none;
+	color: #AA7BA7;
+	width: 40%;
+}
+.navLinks > li > a:hover {
+	color: #CD6A8D;
+}
+h2{
+	font-size: 1.2em;
+	color:#AA7BA7;
+	padding: 0;
+	padding-bottom: 0.4em;
+	margin: 0;
+}
+
+p{
+	margin:0;
+	padding-bottom: 0.4em;
+	font-size: 0.8em;
+	color:#2F9B8D;
+}
+.gameBanner {
+	max-width:100%;
+	min-width:100%;
+}
+img {
+	max-width:100%;
+}
+.metaData{
+	display: block;
+	max-width:50%;
+	padding-right: 1em;
+}
+.gameImage{
+	display: inline;
+	max-width:50%;
+	margin: 0.4em;
+}
+.gameSubject{
+	font-family: serif;
+}
+.gameInfoContainer{
+	background-color: white;
+	padding: 1em;
+	float:left;
+	display: flex;
+	max-width: 100%; 
+	border-bottom-style: dashed;
+    border-color: #2F9B8D;
+}
+.swfInfoContainer{
+	background-color: white;
+	padding: 1em;
+	float: left;
+	display: inline-flex;
+	width: 95%; 
+	height:300px; 
+	border-bottom-style: dashed;
+	border-left-style: dashed;
+    border-color: #2F9B8D;
+
+}
+.swfLink{
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+.swfLink > .metaData{
+	max-width: 100%;
+}
+#contentToggles{
+	display: inline;
+}
+#contentToggles > input{
+	vertical-align:middle;
+}
+.main{
+	margin-left: 220px;
+	margin-right: 20px;
+	max-width: 100%;
+	padding: 1em;
+}
+@media (min-width: 1620px) {
+	.containers.free{
+		float: left;
+		width: 50%;
+	}
+	.containers.swf {
+		width: 100%;
+	}
+	.navLinks.paywall{
+		float: left;
+	}
+	.navLinks.free{
+		margin-right: 1em;
+		float: left;
+	}
+	.containers.paywall{
+		width: 50%;
+    	float: left;
+	}
+	.swfInfoContainer{
+		width: 30%; 
+		height:200px;
+	}
+}
+@media (min-width: 990px) and (max-width: 1619px){
+	.swfInfoContainer{
+			width: 45%; 
+			height:200px;
+		}
+}
+.gameInfoContainer > p{
+}
+
+input[type=checkbox]:checked+.paywall{
+	display: none;
+}
